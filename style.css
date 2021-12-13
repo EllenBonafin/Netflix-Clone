@@ -1,0 +1,120 @@
+:root{
+    --red:#E50914; /** declarei as variaveis de cor*/
+    --black:#141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ }
+
+body{
+    background: var(--black); /**fudno da pagina toda*/
+    font-family: 'Roboto', sans-serif;
+}
+
+header .container{
+    display: flex; 
+    flex-direction: row; /* menu lado a lado*/
+    align-items: center;
+    justify-content: space-between; /* adicionando um espaço entre o menu e a logo */ 
+}
+
+.logo{
+    margin-left: 5px;
+    color: var(--red);
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #a8a8a8;
+    padding: 12px;
+    font-family: "Arial Black", Times;
+}
+header nav a:hover {
+    color: #ffffff;
+} 
+
+/*Filme principal*/
+main .movie-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url('./img/capa.jfif');
+    background-size: 200px;
+    height: 500px;
+    image-orientation: flip;
+    
+    
+}
+
+main .movie-banner .title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 36px;
+    color: white;
+}
+
+.description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.title {
+    margin-top: 15%;
+    font-size: 40px;
+}
+
+main .movie-banner button {
+    background-color: rgba(0, 0, 0, .5);;
+    color: #ffffff;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s ease all;
+    
+}
+
+main .movie-banner button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.movies-carousel {
+    margin: 24px 0;
+}
+
+.movies-carousel .movie-box {
+    cursor: pointer;
+}
+
+/*media queries*/
+
+@media (max-width: 700px) {
+    header .container {
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
+
+    main .movie-banner button {
+        width: 100%;
+        margin-bottom: 8px;;
+    }
+}
+
+@media (min-width: 1000px) {
+    main .movie-banner .title {
+        font-size: 54px;
+    }
+
+    main .movie-banner .description {
+        width: 50%;
+    }
+}
+
