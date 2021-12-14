@@ -17,25 +17,22 @@ header .container{
     display: flex; 
     flex-direction: row; /* menu lado a lado*/
     align-items: center;
-    justify-content: space-between; /* adicionando um espaço entre o menu e a logo */ 
-}
-
-.logo{
-    margin-left: 5px;
-    color: var(--red);
-    font-family: "Arial Black", Times;
-    font-size: 40px;
+    
 }
 
 header nav a {
     text-decoration: none;
     color: #a8a8a8;
-    padding: 12px;
+    padding: 5px;
     font-family: "Arial Black", Times;
 }
 header nav a:hover {
     color: #ffffff;
 } 
+
+.logo{
+    padding-left: 50px;
+}
 
 /*Filme principal*/
 main .movie-banner {
@@ -43,8 +40,8 @@ main .movie-banner {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url('./img/capa.jfif');
-    background-size: 200px;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url('./img/images.jfif');
+    background-size: 98%;
     height: 500px;
     image-orientation: flip;
     
@@ -61,6 +58,8 @@ main .movie-banner .title {
     margin-top: 10px;
     margin-bottom: 40px;
     color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 .title {
@@ -74,7 +73,7 @@ main .movie-banner button {
     padding: 16px 32px;
     border: none;
     border-radius: 2px;
-    font-size: 12px;
+    font-size: 15px;
     text-transform: uppercase;
     cursor: pointer;
     transition: .3s ease all;

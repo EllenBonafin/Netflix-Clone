@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.min.css">
-
+   <link rel="stylesheet" href="home.html">
     <title>NETFLIX CLONE</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
+            <h2 class="logo"><img src="./img/logo_netflix.png" alt="logo"  width="45%"></h2>
             <nav>
                 <a href="">Início</a>
                 <a href="">Séries</a>
@@ -29,7 +29,8 @@
                 <p class="description">A princesa Leia é mantida refém pelas forças imperiais comandadas por Darth Vader. Luke Skywalker e o capitão Han Solo precisam libertá-la e restaurar a liberdade e a justiça na galáxia.</p>
                 <div class="buttons">
                 <button role="button" class="button">
-                    Assistir agora
+                    <span class="glyphicon glyphicon-ok img-circle text-primary btn-icon"></span>
+                    Assistir
                 </button>
                 <button role="button" class="button">
                     Mais informações
@@ -82,11 +83,26 @@
                 items: 4, // sao 4 itens por vez
                 loop: true, 
                 margin: 10,
-                nav: true // espaçamento de 10px
+                nav: true, // espaçamento de 10px
+
+                responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+                
             });
 
         });
     </script>
+
+
     
 </body>
 </html>
