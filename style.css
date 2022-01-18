@@ -44,7 +44,9 @@ main .movie-banner {
     background-size: 98%;
     height: 500px;
     image-orientation: flip;
-    
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    object-fit: cover;
     
 }
 
@@ -114,6 +116,13 @@ main .movie-banner button:hover {
 
     main .movie-banner .description {
         width: 50%;
+    }
+}
+
+/*responsive*/
+@media only screen and (min-width:900px) and (max-width:1200px){ 
+    div.item{
+        width: 110%;
     }
 }
 
